@@ -1,4 +1,5 @@
-import { Text } from "react-native";
+
+import { Routes } from './src/Routes';
 
 
 
@@ -6,7 +7,7 @@ function App() {
   
 
   return (
-    <Text>Hello, world!</Text>
+   <Routes/>
   )
 }
 
