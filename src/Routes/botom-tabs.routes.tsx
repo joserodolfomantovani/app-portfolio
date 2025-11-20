@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { HomeScreen } from '../screens/Home/HomeScreen'
 
 import MaterialCommunityIcons  from 'react-native-vector-icons/MaterialCommunityIcons'
-import { SkillScreen } from '../screens/Skill/SkillScreen'
+import SkillScreen from '../screens/Skill/SkillScreen'
 
 
 
@@ -15,11 +15,11 @@ export function BottomTabsRoutes() {
         name='home'
         component={HomeScreen}
         options={{
-          title: 'Main',
+          title: 'Home',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons 
               name='home'
-              color='red'
+              color={color}
               size={size}
             />
           )
@@ -31,7 +31,7 @@ export function BottomTabsRoutes() {
         component={SkillScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="view-gallery" size={24} color="blue" />
+            <MaterialCommunityIcons name="medal-outline" size={size} color={color} />
           )
         }}
       />
