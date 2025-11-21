@@ -1,5 +1,4 @@
 # app-portfolio
-# app-portfolio
 Uma aplicação de portfólio em React Native que apresenta projetos e habilidades.
 
 ## Funcionalidades
